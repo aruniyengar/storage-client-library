@@ -1,11 +1,11 @@
-package client;
+package com.ibm.storage.clientlibrary;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
 @RunWith(Suite.class)
-@SuiteClasses({ SameProcessCacheTest.class })
-public class SameProcessCacheAllTests {
+@SuiteClasses({ RedisCacheTests.class })
+public class RedisCacheAllTests {
 
 }
