@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.ibm.cache</groupId>
-  <artifactId>Cache</artifactId>
+  <groupId>com.ibm.storage</groupId>
+  <artifactId>clientlibrary</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>Caches</name>
-  <description>Caches for reducing latency for remote storage</description>
+  <name>${project.groupId}:${project.artifactId}</name>
+  <description>A Java library providing caching, compression, and encryption which is intended for storage clients.</description>
   <dependencies>
   	<dependency>
   		<groupId>com.google.guava</groupId>
@@ -17,4 +17,18 @@
   		<version>2.7.2</version>
   	</dependency>
   </dependencies>
+    
+<build>
+  <plugins>
+   <plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-compiler-plugin</artifactId>
+    <version>3.1</version>
+    <configuration>
+        <source>1.7</source>
+        <target>1.7</target>
+    </configuration>
+	</plugin>
+	</plugins>
+</build>
 </project>
