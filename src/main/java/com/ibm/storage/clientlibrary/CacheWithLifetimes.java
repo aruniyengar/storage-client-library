@@ -28,12 +28,10 @@ public interface CacheWithLifetimes<K, V> extends Cache<K, V> {
      * 
      * @param map
      *            map containing key-value pairs to cache
-     * @param value
-     *            value associated with each key-value pair
      * @param lifetime
      *            lifetime in milliseconds associated with each key-value pair.
      *            If the system supports revalidation of expired cache entries to determine if
-     *            expired entries are really obsolete, a value <= 0 indicates cached entry should
+     *            expired entries are really obsolete, a nonpositive value indicates cached entry should
      *            always be revalidated before being returned to client
      * 
      * */

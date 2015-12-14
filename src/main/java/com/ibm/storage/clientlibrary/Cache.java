@@ -96,8 +96,6 @@ public interface Cache<K, V> {
      * 
      * @param map
      *            map containing key-value pairs to cache
-     * @param value
-     *            value associated with each key-value pair
      * 
      * */
     public void putAll(Map<K, V> map);
@@ -105,6 +103,7 @@ public interface Cache<K, V> {
     /**
      * Return number of objects in cache
      * 
+     * @return number of objects in cache
      * */
     public long size();
 

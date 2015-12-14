@@ -134,6 +134,8 @@ public class RedisCache<K, V> implements CacheWithLifetimes<K, V> {
     /**
      * delete all key-value pairs from all databases
      * 
+     * @return status code reply
+     *    
      * */
     public String flushAll() {
         return cache.flushAll();
@@ -278,10 +280,6 @@ public class RedisCache<K, V> implements CacheWithLifetimes<K, V> {
      * 
      * @param map
      *            map containing key-value pairs to cache
-     * @param value
-     *            value associated with each key-value pair
-     * @param lifetime
-     *            lifetime in milliseconds associated with each key-value pair
      * 
      * */
     @Override
@@ -294,8 +292,6 @@ public class RedisCache<K, V> implements CacheWithLifetimes<K, V> {
      * 
      * @param map
      *            map containing key-value pairs to cache
-     * @param value
-     *            value associated with each key-value pair
      * @param lifetime
      *            lifetime in milliseconds associated with each key-value pair
      * 

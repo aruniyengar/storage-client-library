@@ -22,6 +22,8 @@ public class Serializer {
      * 
      * @param bytes
      *            bytes to deserialize
+     * @param <T>
+     *            type of deserialized object
      * @return deserialized object
      * 
      * */
@@ -63,6 +65,8 @@ public class Serializer {
      * 
      * @param r
      *            object to serialize
+     * @param <T>
+     *            type of deserialized object
      * @return serialized object
      * 
      * */

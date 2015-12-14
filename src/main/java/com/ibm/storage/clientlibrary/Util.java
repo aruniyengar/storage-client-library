@@ -25,8 +25,10 @@ public class Util {
     /**
      * Perform an unchecked cast while suppressing warnings
      * 
-     * @param object
+     * @param obj
      *            object to be cached
+     * @param <T>
+     *            type of cast object
      * @return cast object
      * 
      * */
@@ -72,6 +74,8 @@ public class Util {
      * 
      * @param bytes
      *            byte array corresponding to compressed object
+     * @param <T>
+     *            type of decompressed object
      * @return decompressed object
      * 
      * */

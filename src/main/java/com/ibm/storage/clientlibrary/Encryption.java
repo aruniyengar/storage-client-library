@@ -38,8 +38,10 @@ public class Encryption {
      * 
      * @param sealedObject
      *            encrypted object
-     * @param secretKey
+     * @param key
      *            encryption key
+     * @param <T>
+     *            type of decrypted object
      * @return decrypted object
      * 
      * */
@@ -61,7 +63,7 @@ public class Encryption {
      * 
      * @param object
      *            object which implements Serializable
-     * @param secretKey
+     * @param key
      *            encryption key
      * @return encrypted object
      * 
