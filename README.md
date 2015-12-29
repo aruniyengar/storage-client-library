@@ -12,3 +12,5 @@ This library can be incorporated into a Java project managed by Maven via the Ma
   		<version>1.0</version>
   	</dependency>
 ```
+
+An overview of this storage library is available [in this research report](http://domino.watson.ibm.com/library/CyberDig.nsf/papers/16214813202B330D85257F2A004A2187/$File/rc25584.pdf).
