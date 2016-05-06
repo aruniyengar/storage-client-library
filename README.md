@@ -38,6 +38,7 @@ One can connect to a redis cache of byte arrays indexed by strings running on th
     CacheWithLifetimes<String, byte[]> cache = new RedisCacheExtended<String, byte[]>("localhost", 6379, 60, defaultExpiration);
 ~~~
 Here, 6379 is the port number, and 60 indicates that idle connections should be closed after 60 seconds.
+
 The following method call adds 42 to the cache indexed by “key1”.  “lifetime” is the lifetime of the cached value in milliseconds:
 ~~~ java
         cache.put(key1, 42, lifetime);
@@ -78,7 +79,7 @@ The following displays cache statistics, such as hit rates:
 ~~~ java
         System.out.println(cache.getStatistics().getStats());
 ~~~
-When Redis is being used as a remote process cache, it may be desirable to use features of Redis which go beyond the methods offered by the CacheWithLifetimes interface.  The following RedisCacheExtended method returns a data structure corresponding to the Jedis interface for Redis [Jedis] which allows application programs to access the cache using Jedis methods:
+When Redis is being used as a remote process cache, it may be desirable to use features of Redis which go beyond the methods offered by the CacheWithLifetimes interface.  The following RedisCacheExtended method returns a data structure corresponding to the Jedis interface for Redis which allows application programs to access the cache using Jedis methods:
 ~~~ java
     /**
      * Return underlying Jedis object for applications to explicitly use.
