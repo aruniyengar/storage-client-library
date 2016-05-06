@@ -27,3 +27,13 @@ One can create an in-process cache of integers indexed by strings using the Guav
 ~~~ java
     CacheWithLifetimes<String, Integer> cache = new InProcessCache<String, Integer>(numObjects, defaultLifetime);
 ~~~
+In order to use a remote process cache, Redis is a preferred implementation.  The following import statements should be used:
+~~~ java
+import com.ibm.storage.clientlibrary.CacheWithLifetimes;
+import com.ibm.storage.clientlibrary.RedisCacheExtended;
+~~~
+One can connect to a redis cache of byte arrays indexed by strings running on the same node from a Java program via:
+~~~ java
+    CacheWithLifetimes<String, byte[]> cache = new RedisCacheExtended<String, byte[]>("localhost", 6379, 60, defaultExpiration);
+~~~
+Here, 6379 is the port number, and 60 indicates that idle connections should be closed after 60 seconds.
