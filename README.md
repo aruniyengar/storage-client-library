@@ -1,8 +1,8 @@
 # storage-client-library
-Java library for storage clients which implements caching, compression, encryption
-This github repository is intended to be used for a client accessing a server for storing and retrieving data.  In general, there may
+A Java library for data store clients which implements caching, compression, and encryption.
+The key use case is a client accessing a server for storing and retrieving data.  In general, there may
 be considerable overhead for accessing the server.  This library can reduce this overhead via client-side caching.  It can also compress and
-encrypt data.
+encrypt data.  This library can be used for a wide variety of other use cases as well.
 
 This library can be incorporated into a Java project managed by Maven via the Maven dependency:
 ```xml
