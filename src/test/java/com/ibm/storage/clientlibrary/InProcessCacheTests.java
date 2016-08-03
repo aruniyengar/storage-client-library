@@ -6,6 +6,7 @@ package com.ibm.storage.clientlibrary;
 
 import org.junit.Test;
 
+import com.ibm.storage.clientlibrary.CacheWithLifetimes;
 import com.ibm.storage.clientlibrary.InProcessCache;
 
 /**
@@ -16,7 +17,7 @@ public class InProcessCacheTests {
 
     long defaultExpiration = 6000;
     int numObjects = 2000;
-    InProcessCache<String, Integer> spc = new InProcessCache<String, Integer>(
+    CacheWithLifetimes<String, Integer> spc = new InProcessCache<String, Integer>(
             numObjects, defaultExpiration);
     CacheTests cacheTests = new CacheTests();
 

@@ -14,7 +14,7 @@ import java.util.Map;
 
 import org.junit.Test;
 
-import com.ibm.storage.clientlibrary.RedisCache;
+import com.ibm.storage.clientlibrary.RedisCacheExtended;
 import com.ibm.storage.clientlibrary.Serializer;
 import com.ibm.storage.clientlibrary.Util;
 
@@ -26,7 +26,7 @@ public class RedisCacheVerbose {
 
     long defaultExpiration = 6000;
     int numObjects = 2000;
-    RedisCache<String, Integer> opc = new RedisCache<String, Integer>
+    RedisCacheExtended<String, Integer> opc = new RedisCacheExtended<String, Integer>
         ("localhost", 6379, 60, defaultExpiration);
     String key1 = "key1";
     String key2 = "key2";

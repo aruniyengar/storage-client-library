@@ -26,7 +26,7 @@ public class Util {
      * Perform an unchecked cast while suppressing warnings
      * 
      * @param obj
-     *            object to be cached
+     *            object to be cast
      * @param <T>
      *            type of cast object
      * @return cast object

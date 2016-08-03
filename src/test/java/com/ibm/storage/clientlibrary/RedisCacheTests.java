@@ -6,7 +6,8 @@ package com.ibm.storage.clientlibrary;
 
 import org.junit.Test;
 
-import com.ibm.storage.clientlibrary.RedisCache;
+import com.ibm.storage.clientlibrary.CacheWithLifetimes;
+import com.ibm.storage.clientlibrary.RedisCacheExtended;
 
 /**
  * @author ArunIyengar
@@ -15,7 +16,7 @@ import com.ibm.storage.clientlibrary.RedisCache;
 public class RedisCacheTests {
 
     long defaultExpiration = 6000;
-    RedisCache<String, Integer> opc = new RedisCache<String, Integer>
+    CacheWithLifetimes<String, Integer> opc = new RedisCacheExtended<String, Integer>
         ("localhost", 6379, 60, defaultExpiration);
     CacheTests cacheTests = new CacheTests();
 
