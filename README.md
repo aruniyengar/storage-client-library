@@ -13,7 +13,13 @@ This library can be incorporated into a Java project managed by Maven via the Ma
   	</dependency>
 ```
 
+If Gradle is being used, thia library can be used via the following Gradle dependency:
+```gradle
+    compile 'com.ibm.storage:clientlibrary:1.0'
+```
+
 An overview of this storage client library is available from:
+* Arun Iyengar,  <a href="http://researcher.watson.ibm.com/researcher/files/us-aruni/ICDE17-Iyengar.pdf">"Providing Enhanced Functionality for Data Store Clients"</a>. In Proceedings of the 33rd IEEE International Conference on Data Engineering (ICDE 2017), San Diego, California, April 2017.
 * Arun Iyengar, [Enhanced Storage Clients](http://domino.watson.ibm.com/library/CyberDig.nsf/papers/16214813202B330D85257F2A004A2187/$File/rc25584.pdf), IBM Research Report RC25584 (WAT1512-042), December 23, 2015.
 
 ## Getting Started
